@@ -36,7 +36,7 @@ export class AppController {
   @UseGuards(JwtAuthGuard)
   @Get('csvdata')
   getdata(@Req() request) {
-    console.log(request.user);
+    // console.log(request.user);
     return this.appService.csvdata()
   }
 
